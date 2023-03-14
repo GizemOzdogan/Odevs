@@ -18,7 +18,6 @@ int main() {
 
     std::cout << "Min eleman: " << min << std::endl;
     
-        
     return 0;
     
 }
