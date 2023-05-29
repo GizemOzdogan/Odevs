@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  background-color: #ffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+.active {
+  border-bottom: 2px solid var(--warning);
+}
+
+.main-header .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  padding: 2rem;
+}
+
+.main-header .content h1 {
+  font-size: 5.5rem;
+}
+
+.main-header .content p {
+  font-size: 2.3rem;
+  max-width: 60rem;
+  margin: 2rem 0 3rem;
+}
+
+.main-header * {
+  z-index: 1;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+  background-color: rgba(27, 36, 36, 0.7);
+  color: #fff;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  padding: 0 3rem;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 1rem 2rem;
+  margin: 0 0.5rem;
+}
+
+.navbar ul li a:hover {
+  border-bottom: 2px solid var(--warning);
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar .menuIcon {
+  display: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  height: 20rem;
+}
+
+.footer .logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .footerNav,
+.footerlogo,
+.outlineSocial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer .footerNav ul {
+  padding: 1rem 2rem;
+  margin: 0 8rem;
+  display: flex;
+}
+
+.footer .footerNav ul li a {
+  padding: 1rem 2rem;
+  margin: 0 3rem;
+}
+
+.footer a {
+  color: var(--primary);
+}
+
+.footer ul li a:hover,
+.footer .social a:hover {
+  opacity: 0.7;
+}
+
+.footer .social {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 9px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .navbar a {
+    margin: 0 3px;
+    padding: 10px;
+  }
+
+  .footerNav nav ul li {
+    display: none;
+  }
+
+  .menu_item {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    display: none;
+  }
+
+  .navbar .menuIcon {
+    display: block;
+    margin: 1rem 2rem 2rem 2rem;
+  }
+
+  .responsive .menu .menu_item {
+    display: inline-block;
+  }
+
+  .menu {
+    width: 100%;
+  }
+
+  .responsive .menu ul {
+    display: inline-block;
+  }
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+form .form-group {
+  padding: 1rem 0;
+}

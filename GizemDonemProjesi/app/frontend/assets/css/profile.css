@@ -1,0 +1,24 @@
+.main-header {
+  background-image: url("../images/asdas.jpg");
+  height: 40vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+}

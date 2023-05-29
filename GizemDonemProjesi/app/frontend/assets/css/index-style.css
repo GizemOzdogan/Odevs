@@ -1,0 +1,64 @@
+.main-header {
+  background-image: url("../images/wallpaperflare.com_wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: #fff;
+  position: relative;
+}
+
+.main-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.icons {
+  padding: 3rem;
+}
+
+.icons h3 {
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.icons i {
+  border-radius: 50%;
+  background-color: var(--primary);
+  color: #fff;
+  width: 7.5rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.about {
+  color: #fff;
+}
+
+.about img {
+  width: 100%;
+}
+
+.about h2 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.about p {
+  margin: 2rem 0;
+}
+
+#projects img {
+  transition: all 0.3s ease-out;
+}
+
+#projects img:hover {
+  opacity: 0.8;
+  transform: scale(0.95);
+  cursor: pointer;
+}

@@ -1,0 +1,53 @@
+.main-header {
+  background-image: url("../images/asdas.jpg");
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  position: relative;
+}
+
+.main-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.map {
+  width: 100%;
+  height: 45vh;
+}
+
+#contact-us {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#contact-us .form-group button {
+  padding: 16px 24px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.ci-group > p {
+  color: #253e28;
+}
+.ci-group > b {
+  color: rgb(20, 47, 38);
+}
+
+@media (max-width: 768px) {
+  #contact-us {
+    display: inline-block;
+    margin: 1rem;
+  }
+
+  #contact-us .contact-info {
+    margin: 0 2rem;
+    text-align: center;
+  }
+}
